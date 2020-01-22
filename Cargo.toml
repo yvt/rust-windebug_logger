@@ -1,6 +1,6 @@
 [package]
 name = "windebug_logger"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["yvt <i@yvt.jp>"]
 edition = "2018"
 license = "MIT/Apache-2.0"
@@ -23,3 +23,6 @@ features = ["winbase", "debugapi", "stringapiset", "winnls", "datetimeapi",
 
 [badges]
 maintenance = { status = "passively-maintained" }
+
+[package.metadata.docs.rs]
+default-target = "x86_64-pc-windows-msvc"
