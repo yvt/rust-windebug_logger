@@ -1,5 +1,9 @@
 # windebug_logger
 
+[![Latest version](https://img.shields.io/crates/v/windebug_logger.svg)](https://crates.io/crates/windebug_logger)
+[![Documentation](https://docs.rs/windebug_logger/badge.svg)](https://docs.rs/windebug_logger)
+![License](https://img.shields.io/crates/l/windebug_logger.svg)
+
 A logger that redirects all messages to the [`OutputDebugMessageW`]
 Win32 API function in a format similar to [`simple_logger`].
 
