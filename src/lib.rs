@@ -1,5 +1,5 @@
 //! A logger that redirects all messages to the [`OutputDebugMessageW`]
-//! function in a format similar to [`simple_logger`].
+//! Win32 API function in a format similar to [`simple_logger`].
 //!
 //! [`OutputDebugMessageW`]: https://docs.microsoft.com/en-us/windows/win32/api/debugapi/nf-debugapi-outputdebugstringw
 //! [`simple_logger`]: https://crates.io/crates/simple_logger
