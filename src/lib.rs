@@ -184,7 +184,6 @@ macro_rules! init_with_level_static {
 /// info!("This message will not be logged.");
 /// # }
 /// ```
-#[cfg(feature = "std")]
 pub fn init_with_level(level: Level) -> Result<(), SetLoggerError> {
     let logger = WinDebugLogger { level };
     match log::set_boxed_logger(Box::new(logger)) {
