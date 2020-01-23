@@ -121,7 +121,7 @@ fn log(record: &log::Record) -> Option<()> {
             winbase::FORMAT_MESSAGE_ALLOCATE_BUFFER		// allocate buffer using `LocalAlloc`
                 | winbase::FORMAT_MESSAGE_FROM_STRING	// use a given format string
                 | winbase::FORMAT_MESSAGE_ARGUMENT_ARRAY, // arguments are in an array, not `va_list`
-            wchar::wch_c!("%1 %2 %3").as_ptr() as _,
+            wchar::wch_c!("%1 %2 %3\n").as_ptr() as _,
             0, // message id - ignored
             0, // language id - ignored
             out.as_mut_ptr() as _,
